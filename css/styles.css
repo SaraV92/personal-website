@@ -3,6 +3,7 @@
  */
 
 /* Links */
+
 a,
 a:focus,
 a:hover {
@@ -10,6 +11,7 @@ a:hover {
 }
 
 /* Custom default button */
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -18,7 +20,6 @@ a:hover {
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
 
 /*
  * Base structure
@@ -40,16 +41,22 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-
 /*
  * Header
  */
+
 .masthead {
   background-color: #333;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+}
+
+/* Logo Nav */
+
+.navbar-brand img {
+  width: 200px;
 }
 
 .nav-masthead .nav-link {
@@ -72,6 +79,28 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.navbar-nav li {
+  padding: 0 0.5rem;
+}
+
+/* Hide close icon when burger one shown */
+
+.close-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
 }
 
 header hr {
@@ -103,33 +132,37 @@ section {
   padding: 8rem 1.5rem;
 }
 
-section.intro {
+section#intro {
   background-color: #333;
-  padding-top: 8rem;
+  padding-top: 2.5rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
 
-section.about {
+section#about {
   color: #333;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
-section.skills {
+section#skills {
   background-color: #f6f6f6;
   color: #333;
+  padding-top: 9rem;
+  padding-bottom: 15rem;
   -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
 }
 
-section.projects {
+section#projects {
   color: #333;
-  padding: 8rem 1.5rem 12rem 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
 }
 
-section.contact {
+section#contact {
   background-color: #333;
-  padding-top: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
 }
@@ -137,6 +170,7 @@ section.contact {
 /*
  * Footer
  */
+
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   background-color: #000;
