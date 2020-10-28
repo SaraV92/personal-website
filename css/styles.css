@@ -15,9 +15,9 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
+  background-color: #007bff;
   border: .05rem solid #fff;
 }
 
@@ -41,6 +41,16 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 /*
  * Header
  */
@@ -57,6 +67,7 @@ body {
 
 .navbar-brand img {
   width: 200px;
+  padding: 1.25rem 0;
 }
 
 .nav-masthead .nav-link {
@@ -153,6 +164,16 @@ section#skills {
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
 }
 
+#skills ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+#skills ul li {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
 section#projects {
   color: #333;
   padding-top: 3rem;
@@ -179,4 +200,5 @@ section#contact {
 
 .mastfoot p {
   margin: 0;
+  text-align: center;
 }
