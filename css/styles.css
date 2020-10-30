@@ -131,10 +131,10 @@ header hr {
 
 
 /*
- * Cover
+ * Inner
  */
 
-.cover .btn-lg {
+.btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
@@ -178,6 +178,17 @@ section#projects {
   color: #333;
   padding-top: 3rem;
   padding-bottom: 8rem;
+}
+
+.card {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.card-body>.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #333;
 }
 
 section#contact {
