@@ -57,7 +57,7 @@
         <h1 class="cover-heading">Hi, I'm Sara.</h1>
         <p class="lead">A Junior Front-end Web Developer happily living in the stunning city of Turin, Italy. I'm still learning but determined to become a successful professional.</p>
         <p class="lead">
-          <a href="#projects" class="btn btn-lg btn-secondary">My Projects</a>
+          <a href="#projects" class="btn btn-lg btn-primary">My Projects</a>
         </p>
       </section>
       <!-- End Intro -->
@@ -146,8 +146,29 @@
       <!-- End Projects -->
       <!-- Contatc Section -->
       <section class="five" id="contact">
-        <h2 class="cover-heading">Contact me</h2>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <h2>Contact me</h2>
+        <p class="lead">Fill in the form below if you want to discuss about a particoular project.</p>
+        <!-- Form -->
+        <form>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="inputSurname">Surname</label>
+            <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+            <label for="textareaMessage">Project</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+        <!-- End form -->
       </section>
       <!-- End Contact -->
     </main>
