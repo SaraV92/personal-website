@@ -2,24 +2,6 @@
  * Globals
  */
 
-/* Links */
-
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:focus {
-  color: #fff;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #007bff;
-}
-
 /*
  * Base structure
  */
@@ -37,6 +19,7 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
+  text-align: left;
 }
 
 h1 {
@@ -47,6 +30,28 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: 400;
+}
+
+p>strong {
+    font-weight: 500;
+}
+
+/* Links */
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #007bff;
 }
 
 /*
@@ -209,4 +214,23 @@ section#contact {
 .mastfoot p {
   margin: 0;
   text-align: center;
+}
+
+
+/* Media Queries*/
+
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+}
+
+@media only screen and (min-width : 1025px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (min-width : 1201px) {
+
 }
