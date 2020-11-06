@@ -46,7 +46,6 @@
             </ul>
           </div>
         </nav>
-        <hr>
         <!-- End Navbar -->
       </div>
     </header>
@@ -54,23 +53,24 @@
     <main role="main" class="inner">
       <!-- Intro Section -->
       <section class="one" id="intro">
-        <div class="row">
-        <div class="col-lg-6">
-          <h1 class="cover-heading">Hi, I'm Sara.</h1>
-          <p class="intro-description lead">A <strong>Junior Front-end Web Developer</strong> happily living in the stunning city of Turin, Italy. I'm still learning but determined to become a successful professional.</p>
-          <a href="#projects" class="btn btn-lg btn-primary">My Projects</a>
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-6">
+            <h1 class="cover-heading">Hi, I'm Sara.</h1>
+            <p class="intro-description lead">A <strong>Junior Front-end Web Developer</strong> happily living in the stunning city of Turin, Italy. I'm still learning but determined to become a successful professional.</p>
+            <a href="#projects" class="btn btn-lg btn-primary">My Projects</a>
+          </div>
+          <div class="col-lg-6">
+              <img class="avatar float-right" src="images/avatar-sara-viglione-developer-350w.png" alt="avatar sara vigliore developer">
+          </div>
+      </div>
         </div>
-        <div class="col-lg-6">
-            <img class="avatar float-right" src="images/avatar-sara-viglione-developer-350w.png" alt="avatar sara vigliore developer">
-        </div>
-    </div>
       </section>
       <!-- End Intro -->
       <!-- About me Section -->
       <section class="two" id="about">
         <h2 class="cover-heading">About me</h2>
-        <p class="lead">I'm 28 years old and I started to get interested in coding at the end of 2013, year in which I attended a web design course.</p>
-        <p class="lead">The class provided me with some basic understanding of HTML and CSS that soon after gave me the chance to get a job in a web marketing agency.</p>
+        <p class="lead">I'm 28 years old and I started to get interested in coding at the end of 2013, year in which I attended a web design course, the class provided me with some basic understanding of HTML and CSS that soon after gave me the chance to get a job in a web marketing agency.</p>
         <p class="lead">My following working experiences were focused in this area but at a certain point I decided to refresh my coding skills in order to pursue a career in the web development industry.</p>
       </section>
       <!-- End About me -->
@@ -79,36 +79,34 @@
         <h2 class="cover-heading">My skills</h2>
         <p class="lead">Below a list of my web development skills:</p>
         <ul>
-          <li>
-            HTML
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-            </div>
-          </li>
-          <li>
+          <div class="row">
+            <li class="col-lg-6">
+              HTML
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </li>
+          <li class="col-lg-6">
             CSS
             <div class="progress">
               <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
             </div>
           </li>
-          <li>
-            JavaScript
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
             </div>
-          </li>
-          <li>
-            jQuery
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            <div class="row">
+              <li class="col-lg-6">
+                JavaScript
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+              </li>
+              <li class="col-lg-6">
+                jQuery
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                </div>
+              </li>
             </div>
-          </li>
-          <li>
-            Bootstrap
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-            </div>
-          </li>
         </ul>
       </section>
       <!-- End Skillss -->
@@ -191,25 +189,27 @@
         <h2>Contact me</h2>
         <p class="lead">Fill in the form below if you want to discuss about a particoular project.</p>
         <!-- Form -->
-        <form>
-          <div class="form-group">
-            <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="inputSurname">Surname</label>
-            <input type="text" class="form-control" id="inputSurname" placeholder="Surname">
-          </div>
-          <div class="form-group">
-            <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
-          </div>
-          <div class="form-group">
-            <label for="textareaMessage">Project</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </form>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+              </div>
+              <div class="form-group col-md-6 col-lg-4">
+                <label for="inputSurname">Surname</label>
+                <input type="text" class="form-control" id="inputSurname" placeholder="Enter Surname">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="textareaMessage">Project</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
         <!-- End form -->
       </section>
       <!-- End Contact -->
