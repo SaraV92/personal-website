@@ -215,6 +215,13 @@ section#contact {
   margin: 1rem 0;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
 /* Media Queries*/
 @media (min-width: 576px) {
   h1 {
