@@ -1,0 +1,364 @@
+/*
+ * Globals
+ */
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p>strong {
+  font-weight: 500;
+}
+
+/* Backgrounds and colors */
+.dark-bg {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-bg {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #fff;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #007bff;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 0.5rem;
+  border:1px solid transparent;
+}
+
+/* Logo Nav */
+.navbar-brand img {
+  width: 200px;
+  padding: 1.25rem 0;
+}
+
+.navbar-nav li {
+  padding: 0 0.5rem;
+}
+
+.navbar .nav-link {
+  padding: .25rem 0;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.navbar .nav-link+.nav-link {
+  margin-left: 1rem;
+}
+
+.navbar .navbar-nav .active>.nav-link {
+  color: #fff;
+}
+
+/* Hide close-icon when burger one shown */
+.close-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.navbar-toggler.collapsed .close-icon {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+
+  .nav-masthead {
+    float: right;
+  }
+}
+
+/*
+ * Inner
+ */
+section {
+  padding: 8rem 3.5rem;
+}
+
+section#intro {
+  padding-top: 2.5rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+.container {
+  padding: 1rem 0;
+}
+
+.avatar {
+  box-sizing: border-box;
+  border: 25px solid black;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+.btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+section#about {
+  padding-top: 2rem;
+}
+
+section#skills {
+  background-color: #f6f6f6;
+  color: #333;
+  padding-top: 9rem;
+  padding-bottom: 15rem;
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+}
+
+.skills-items ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.skills-items ul li {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+section#projects {
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.card {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+section#contact {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+  background-color: #000;
+  padding: 1rem;
+}
+
+.mastfoot p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Media Queries*/
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  p.intro-description {
+    font-size: 1.25rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .avatar{
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+    border:none;
+  }
+
+  .navbar-brand img {
+    width: 240px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+
+  p.lead {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  p.intro-description {
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0 2.5rem;
+    border: 1px solid transparent;
+  }
+
+  .navbar-brand img {
+    width: 270px;
+  }
+
+  li.nav-item {
+    font-size: 1.25rem;
+  }
+
+  .navbar .nav-link {
+    border-bottom: .25rem solid transparent;
+  }
+
+  .navbar .navbar-nav .active>.nav-link {
+    border-bottom-color: #fff;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+
+  p.lead {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  p.intro-description {
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 0 3.5rem;
+    border:none;
+  }
+
+  .navbar-brand img {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .container {
+    padding: 3rem 0;
+  }
+
+  p.lead {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  p.intro-description {
+    font-size: 2rem;
+  }
+
+  .btn-lg {
+    font-size: 1.5rem;
+  }
+}
