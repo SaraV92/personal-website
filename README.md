@@ -8,6 +8,6 @@ This is a small and simple website that I've created to tell a little bit about 
 
 ## Technologies Used
 
-The languages that I've used for this website were HTML5 and CSS3 along with the Bootstrap framework.
+The languages that I've used for this website were HTML5, CSS3, jQuery along with the Bootstrap framework.
 
 [Website link](https://sarav92.github.io/personal-website/)
