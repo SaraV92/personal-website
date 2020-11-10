@@ -1,6 +1,6 @@
 # Sara Viglione Web Developer
 
-#### Personal website}, {10/11/2020}
+#### Personal website, 10/11/2020
 
 ## Description
 
