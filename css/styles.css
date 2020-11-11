@@ -118,6 +118,10 @@ a:hover {
   display: none;
 }
 
+.navbar-dark .navbar-toggler {
+  outline: 1px solid #fff;
+}
+
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
   display: inline;
 }
