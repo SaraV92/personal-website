@@ -118,6 +118,10 @@ a:hover {
   display: none;
 }
 
+.navbar-dark .navbar-toggler {
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
   display: inline;
 }
