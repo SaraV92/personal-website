@@ -119,7 +119,7 @@ a:hover {
 }
 
 .navbar-dark .navbar-toggler {
-    outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px solid #fff;
 }
 
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
